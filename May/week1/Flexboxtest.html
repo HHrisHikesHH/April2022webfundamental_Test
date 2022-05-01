@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexboxtest.html</title>
+    <style>
+      .cont {
+        display: flex;
+        height: 200px;
+        width: 900px;
+        background-color: red;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 100px auto;
+      }
+      .i1,
+      .i2,
+      .i3 {
+        display: flex;
+        height: 55px;
+        width: 160px;
+        background-color: green;
+      }
+      .i1 {
+        display: flex;
+        justify-content: start;
+        color: rgb(46, 42, 42);
+      }
+      .i2 {
+        display: flex;
+        align-items: center;
+        color: rgb(46, 42, 42);
+        justify-content: flex-start;
+      }
+      .i3 {
+        display: flex;
+        justify-content: right;
+        align-items: flex-end;
+        color: rgb(46, 42, 42);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cont">
+      <div class="i1">Child 1</div>
+      <div class="i2">Child 2</div>
+      <div class="i3">Child 3</div>
+    </div>
+  </body>
+</html>
