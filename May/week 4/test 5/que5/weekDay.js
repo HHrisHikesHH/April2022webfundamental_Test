@@ -1,6 +1,6 @@
 // Question 5. Using SWITCH statement, get the day of the week based on day number, means if the day is 1, the day of week is Sunday. If the day is 2 , it's Monday and so on.
 
-let select=0;
+let select=3;
 console.log(`You selected ${select} so today is`);
 switch(select){
     case 1:
