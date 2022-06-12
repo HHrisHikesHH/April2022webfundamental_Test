@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test 8</title>
+    <script src="index.js"></script>
+    <style>
+        *{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-top: 2%;
+            margin-left: 2%;
+            margin: 1%;
+            background-image: linear-gradient(rgb(247, 247, 247),rgb(220, 220, 220));
+        }
+    </style>
+</head>
+<body>
+    <h1>Test 8</h1>
+    
+   <h3>Q. In how many ways can we loop in an array describe each with an example ?
+   </h3>
+   <p> Answer:
+       <br> const array = [1,2,3,4,5];
+       <br>
+       <br>
+        <b>1st->while loop:</b>
+        <p> This is the simple loop which works on the condition given after while keyword into () this loop need to initiate iteration variable and also incremented.</p>
+       <br>
+       const i=0;
+       <br>
+            while(i<=array.length){
+                <br>
+                console.log(array[i]);
+                <br>
+                i++;
+                <br>
+            }
+       <br>
+       <br>
+       <b>2nd->for loop:</b>
+       <p>This is the most common loop which is simpleto declare as we can initiate increment and add conditioninto same for declaration body.</p>
+       <br>
+            for(const i=0;i<=array.length;i++){
+                <br>
+                console.log(array[i]);
+                <br>
+            }
+       <br>
+       <br>
+       <b>3rd->forEach loop:</b>
+       <p>This is the most common loop which is simpleto declare as we can initiate increment and add conditioninto same for declaration body.</p>
+       <br>
+            array.forEach(element => {
+                <br>
+            console.log(element);
+                <br>
+            });
+        <br>
+        <br>
+        <b>4th->for-in loop:</b>
+        <p>This loop is used when we need to iterate the array using the key.</p>
+        <br>
+            for (const key in array) {
+                <br>
+            const element = array[key];
+                <br>
+                console.log(element);
+                <br>
+            }
+        <br>
+        <br>
+        <b>5th->for-of loop:</b>   
+        <p>This loop is used when we need to iterate the array using the index which is similar to simple for loop.</p> 
+        <br>
+            for (const i of array) {
+                <br>
+                console.log(array[i]);
+                <br>
+            }
+
+            <p>Everything else in JS file</p>
+   </p>
+</body>
+</html>
