@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Test 9</title>
+    
+</head>
+
+<body>
+    <p ><b>Question 1:</b>
+    <h4 > Write a program to display the sum of all the positives numbers in an Array.</h4>
+    </p>
+    <br><br>
+
+    <h3>Given Input = [1, -5, 2, 10, -30, 29, 50];</h3> 
+
+    <h3 > the sum of all the positives numbers:</h3><br>
+
+    <h2>
+        <p  id="output"></p>
+    </h2>
+
+</body>
+<script>
+    function sum_of_positive_no() {
+        const input = [1, -5, 2, 10, -30, 29, 50];
+        let negative = [];
+        let sum = 0;
+        for (let i = 0; i < input.length; i++) {
+            if (input[i] < 0) {
+                negative.push(input[i]);
+            }
+            else {
+
+                document.getElementById("output").innerText = ("Sum of all positive no in an Array is", sum = sum + input[i]);
+            }
+        }
+    }
+
+    sum_of_positive_no();
+</script>
+
+</html>
